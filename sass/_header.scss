@@ -62,6 +62,10 @@
     @media only screen and (max-width: $bp-largest) {
       justify-self: start;
     }
+
+    @media only screen and (max-height: 34.375em) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__logo-position {

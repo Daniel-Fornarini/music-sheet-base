@@ -33,6 +33,13 @@
     box-shadow: 0 1rem 4rem rgba(#000, 0.35);
     cursor: pointer;
     z-index: 2000;
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 1.75rem;
+      right: 1.75rem;
+      height: 6rem;
+      width: 6rem;
+    }
   }
 
   &__label-line {
@@ -49,6 +56,10 @@
       background-color: $color-primary;
       position: absolute;
       transition: all 0.2s;
+
+      @media only screen and (max-width: $bp-smallest) {
+        width: 2.25rem;
+      }
     }
 
     &::before,
