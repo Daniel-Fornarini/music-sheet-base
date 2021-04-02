@@ -1,0 +1,77 @@
+.track {
+  grid-column: full-start / full-end;
+
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 0.98),
+      rgba($color-secondary, 0.98)
+    ),
+    url(../img/card.jpg);
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &__heading-1 {
+    text-transform: uppercase;
+    font-size: 8rem;
+    font-weight: 500;
+  }
+
+  &__heading-3 {
+    font-weight: 300;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__info-item {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    letter-spacing: 3px;
+    color: $color-grey-dark-1;
+
+    span {
+      font-size: 1.8rem;
+      color: $color-primary;
+      font-weight: 300;
+      letter-spacing: 3px;
+    }
+  }
+
+  &__posted {
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+
+    span {
+      //color: $color-primary;
+      font-weight: 500;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+  }
+}

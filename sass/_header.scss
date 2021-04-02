@@ -1,0 +1,84 @@
+.header {
+  grid-row: 1 / 2;
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(
+      100deg,
+      rgba($color-secondary, 1) 0%,
+      rgba($color-secondary, 0.98) 55%,
+      transparent 55%,
+      transparent 100%
+    ),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: left;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (max-width: $bp-medium) {
+    background-image: linear-gradient(
+        100deg,
+        rgba($color-secondary, 1) 0%,
+        rgba($color-secondary, 0.98) 70%,
+        transparent 70%,
+        transparent 100%
+      ),
+      url("../img/hero.jpg");
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    background-image: linear-gradient(
+        100deg,
+        rgba($color-secondary, 0.95),
+        rgba($color-secondary, 0.95)
+      ),
+      url("../img/hero.jpg");
+    grid-template-columns: 1fr;
+  }
+
+  &__left {
+    padding: 8rem;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-rows: 1fr repeat(3, min-content) 1fr;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 1.5rem;
+    justify-content: center;
+    align-content: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 4rem;
+    }
+  }
+
+  &__btn {
+    justify-self: start;
+    align-self: end;
+  }
+
+  &__logo {
+    justify-self: center;
+
+    @media only screen and (max-width: $bp-largest) {
+      justify-self: start;
+    }
+  }
+
+  &__logo-position {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-image {
+    height: 10rem;
+    transform: rotate(0deg);
+    margin-right: 1rem;
+  }
+
+  &__logo-title {
+    font-size: 2.2rem;
+    color: $color-primary-dark;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+}

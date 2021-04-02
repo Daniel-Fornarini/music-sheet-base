@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon href='../img/favicon.ico'>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="navbar">
+        <input class="navbar__checkbox" type="checkbox" id="nav">
+        <label class="navbar__label" for="nav">
+            <div class="navbar__label-line">&nbsp;</div>
+        </label>
+        <div class="navbar__back">
+            <ul class="navbar__list navbar__list--big">
+                <li class="navbar__item"><a href="../index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="login.html" class="navbar__link">Log In</a></li>
+            </ul>
+        </div>   
+    </div>
+    <div class="form__logo">
+        <a href="../index.html" class="form__logo-position">
+            <img src="../img/logo.png" alt="Logo" class="form__logo-image">
+            <span class="form__logo-title">Music Sheet Base</span>
+        </a>
+    </div>
+    <div class="container-form">
+        <section class="form">
+            <div class="form__title">
+                <h1 class="heading-1">Registrati ora</h1>
+                <h3 class="heading-3">Ed entra a far parte della community</h3>
+            </div>
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Nome" id="name">
+                <input type="text" class="form__input" placeholder="Cognome" id="surname">
+                <input type="text" class="form__input" placeholder="Email" id="email">
+                <input type="password" class="form__input" placeholder="Password" id="password">
+                <input type="password" class="form__input" placeholder="Ripeti password" id="password-repeat">
+                <div class="form__error" id="error"></div>
+                <button class="btn btn--primary form__btn" id="register">Registrati</button>
+            </div>
+        </section>
+        <footer class="footer">
+          <ul class="footer__info">
+              <li class="footer__item"><a href="" class="footer__link">Pravicy Policy</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Chi siamo</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Facebook</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Instagram</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Contattaci</a></li>
+              <li class="footer__item"><a href="" class="footer__link">Coockie Policy</a></li>   
+          </ul>
+          <div class="footer__split">
+              <span class="footer__split-before"></span>
+              <img src="../img/logo.png" alt="logo" class="footer__img">
+              <span class="footer__split-after"></span>
+          </div>
+          <div class="footer__copyright">
+              &copy; 2021 by Sheet Music Base
+          </div>
+      </footer>
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>

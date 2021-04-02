@@ -1,0 +1,56 @@
+// .video-right {
+//   grid-row: 2 / 3;
+//   grid-column: 1 / 2;
+//   background-color: $color-grey-light-4;
+// }
+
+.video {
+  grid-column: full-start / full-end;
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-grey-light-4;
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .heading-1 {
+      color: $color-grey-dark-1;
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      text-align: center;
+    }
+
+    .heading-3 {
+      letter-spacing: 15px;
+      margin: 3.5rem 0;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+
+  &__container {
+    width: 50%;
+  }
+
+  &__youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600&display=swap" rel="stylesheet">
+    <link rel=icon href='img/favicon.ico'>
+    <title>Music Sheet Base</title>
+</head>
+<body>
+    <div class="navbar">
+        <input class="navbar__checkbox" type="checkbox" id="nav">
+        <label class="navbar__label" for="nav">
+            <div class="navbar__label-line">&nbsp;</div>
+        </label>
+        <div class="navbar__user"></div>
+        <div class="navbar__back">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="html/post.html" class="navbar__link">Amplia l'archivio</a></li>
+                <li class="navbar__item"><a href="html/login.html" class="navbar__link" id="log">Log In</a></li>
+                <li class="navbar__item" id="signup"><a href="html/signup.html" class="navbar__link">Sign Up</a></li>
+            </ul>
+        </div>   
+    </div>
+    <div class="container">
+        <header class="header">
+            <div class="header__left">
+                <div class="header__logo">
+                    <div class="header__logo-position">
+                        <img src="img/logo.png" alt="Logo" class="header__logo-image">
+                        <span class="header__logo-title">Music Sheet Base</span>
+                    </div>
+                </div>
+                <h3 class="heading-3">Acceddi ora ai:</h3>
+                <h1 class="heading-1">Grandi classici della musica</h1>
+                <h2 class="heading-2">Per pianoforte</h2>
+                <a class="btn btn--primary header__btn">Scopri l'intero archivio</a>
+            </div>
+        </header>
+
+        <section class="search">
+            <div class="search__title">
+                <h1 class="heading-1">Oltre 1.000.000 di bran<span class="spacing-fix">i</span></h1>
+                <h3 class="heading-3">tutti da scoprir<span class="spacing-fix">e</span></h3>
+            </div>
+            <div class="search__input">
+                <input type="text" class ="search__input-text" placeholder="Inserisci il nome">
+                <p class="search__choose">Cerca per:</p>
+                <div class="search__radio">
+                    <div class="search__radio-group">
+                        <input type="radio" class="search__radio-input" id="track" name="by" name="track">
+                        <label for="track" class="search__radio-label">
+                            <span class="search__radio-button"></span>
+                            Composizione
+                        </label>
+                    </div>
+                    <div class="search__radio-group">
+                        <input type="radio" class="search__radio-input" id="composer" name="by" name="composer">
+                        <label for="composer" class="search__radio-label">
+                            <span class="search__radio-button"></span>
+                            Compositore
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn--primary search__button">Cerca</button>
+            </div>
+        </section>
+        
+        <div class="" id="cards-title">
+            
+        </div>
+        <div class="" id="cards-left">&nbsp;</div>
+        <section class="" id="cards">
+            <!-- <div class="card">
+                <div class="card__top">
+                    <div class="card__title">Ballata n.1</div>
+                    <div class="card__composer">Chopin</div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__year">Anno<span>1836</span></div>
+                    <div class="card__duration">Durata<span>9:46</span></div>
+                    <div class="card__key">Tonalit&agrave;<span>Sol minore</span></div>
+                    <a href="#" class="btn btn--primary card__btn">Visualizza di più</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__top">
+                    <div class="card__title">Ballata n.1</div>
+                    <div class="card__composer">Chopin</div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__year">Anno<span>1836</span></div>
+                    <div class="card__duration">Durata<span>9:46</span></div>
+                    <div class="card__key">Tonalit&agrave;<span>Sol minore</span></div>
+                    <a href="#" class="btn btn--primary card__btn">Visualizza di più</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__top">
+                    <div class="card__title">Ballata n.1</div>
+                    <div class="card__composer">Chopin</div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__year">Anno<span>1836</span></div>
+                    <div class="card__duration">Durata<span>9:46</span></div>
+                    <div class="card__key">Tonalit&agrave;<span>Sol minore</span></div>
+                    <a href="#" class="btn btn--primary card__btn">Visualizza di più</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__top">
+                    <div class="card__title">Ballata n.1</div>
+                    <div class="card__composer">Chopin</div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__year">Anno<span>1836</span></div>
+                    <div class="card__duration">Durata<span>9:46</span></div>
+                    <div class="card__key">Tonalit&agrave;<span>Sol minore</span></div>
+                    <a href="#" class="btn btn--primary card__btn">Visualizza di più</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__top">
+                    <div class="card__title">Ballata n.1</div>
+                    <div class="card__composer">Chopin</div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__year">Anno<span>1836</span></div>
+                    <div class="card__duration">Durata<span>9:46</span></div>
+                    <div class="card__key">Tonalit&agrave;<span>Sol minore</span></div>
+                    <a href="#" class="btn btn--primary card__btn">Visualizza di più</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__top">
+                    <div class="card__title">Ballata n.1</div>
+                    <div class="card__composer">Chopin</div>
+                </div>
+                <div class="card__bottom">
+                    <div class="card__year">Anno<span>1836</span></div>
+                    <div class="card__duration">Durata<span>9:46</span></div>
+                    <div class="card__key">Tonalit&agrave;<span>Sol minore</span></div>
+                    <a href="#" class="btn btn--primary card__btn">Visualizza di più</a>
+                </div>
+            </div>  -->
+        </section>
+        <div class="" id="cards-right">&nbsp;</div>
+        <footer class="footer footer--last">
+            <ul class="footer__info">
+                <li class="footer__item"><a href="" class="footer__link">Pravicy Policy</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Chi siamo</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Facebook</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Instagram</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Contattaci</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Coockie Policy</a></li>   
+            </ul>
+            <div class="footer__split">
+                <span class="footer__split-before"></span>
+                <img src="img/logo.png" alt="logo" class="footer__img">
+                <span class="footer__split-after"></span>
+            </div>
+            <div class="footer__copyright">
+                &copy; 2021 by Sheet Music Base
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

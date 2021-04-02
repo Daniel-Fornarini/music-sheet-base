@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=icon href='../img/favicon.ico'>
+    <link rel="stylesheet" href="../css/style.css">
+    <title></title>
+</head>
+<body>
+    <div class="navbar">
+        <input class="navbar__checkbox" type="checkbox" id="nav">
+        <label class="navbar__label" for="nav">
+            <div class="navbar__label-line">&nbsp;</div>
+        </label>
+        <div class="navbar__user"></div>
+        <div class="navbar__back">
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="../index.html" class="navbar__link">Home</a></li>
+                <li class="navbar__item"><a href="post.html" class="navbar__link">Amplia l'archivio</a></li>
+                <li class="navbar__item"><a href="login.html" class="navbar__link" id="log">Log In</a></li>
+                <li class="navbar__item" id="signup"><a href="signup.html" class="navbar__link">Sing Up</a></li>
+            </ul>
+        </div>   
+    </div>
+    <div class="form__logo">
+        <a href="../index.html" class="form__logo-position">
+            <img src="../img/logo.png" alt="Logo" class="form__logo-image">
+            <span class="form__logo-title">Music Sheet Base</span>
+        </a>
+    </div>
+    <div class="container-track">
+        <section class="track">
+            <div class="track__title">
+                <h1 class="heading-1 track__heading-1"></h1>
+                <h3 class="heading-3 track__heading-3"></h3>
+            </div>
+            <div class="track__info">
+                <div class="track__info-item">Anno<span id="year"></span></div>
+                <div class="track__info-item">Durata<span id="duration"></span></div>
+                <div class="track__info-item">Tonalit&agrave;<span id="key"></span></div>
+            </div>
+            <div class="track__posted">
+                Aggiunto da <span id="by"></span> il <span id="on"></span>
+            </div>            
+        </section>
+        
+        <section class="video">
+            <div class="video__title">
+                <h1 class="heading-1">Goditi l'esibizione</h1>
+                <h3 class="heading-3">Di un grande virtuoso</h3>
+            </div>
+            <div class="video__container">
+                <div class="video__youtube"></div>
+            </div>
+        </section>
+        
+        <section class="pdf">
+           <div class="pdf__title">
+                <h1 class="heading-1">Consulta lo spartito</h1>
+                <h3 class="heading-3">Della nostra community</h3>
+           </div> 
+           <div class="pdf__group">
+               <div class="pdf__controls">
+                    <button class="pdf__button" id="prev-page">
+                            <svg>
+                                <use xlink:href="../img/sprite.svg#icon-chevron-left"></use>
+                            </svg> 
+                    </button>
+                    <span class="pdf__info">
+                        Pagina <span id="page-num"></span> di <span id="page-count"></span>
+                    </span>
+                    <button class="pdf__button" id="next-page">
+                        <svg>
+                            <use xlink:href="../img/sprite.svg#icon-chevron-right"></use>
+                        </svg> 
+                    </button>
+               </div>
+                <canvas id="pdf-render" class="pdf__render"></canvas>
+           </div>
+           <a class="btn btn--primary pdf__btn">Download</a>
+        </section>
+        <footer class="footer">
+            <ul class="footer__info">
+                <li class="footer__item"><a href="" class="footer__link">Pravicy Policy</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Chi siamo</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Facebook</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Instagram</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Contattaci</a></li>
+                <li class="footer__item"><a href="" class="footer__link">Coockie Policy</a></li>   
+            </ul>
+            <div class="footer__split">
+                <span class="footer__split-before"></span>
+                <img src="../img/logo.png" alt="logo" class="footer__img">
+                <span class="footer__split-after"></span>
+            </div>
+            <div class="footer__copyright">
+                &copy; 2021 by Sheet Music Base
+            </div>
+        </footer>
+    </div>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="../js/track.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+.form {
+  grid-column: full-start / full-end;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary, 0.97),
+      rgba($color-secondary-light, 0.97)
+    ),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input {
+    width: 50rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid $color-primary;
+    outline: none;
+    text-align: center;
+    font-size: 2.5rem;
+    color: $color-grey-light-2;
+    padding-bottom: 0.5rem;
+    margin-bottom: 5rem;
+    transition: all 0.2s;
+
+    &::placeholder {
+      font-family: "Montserrat", sans-serif;
+      color: rgba($color-grey-dark-2, 0.7);
+      font-weight: 300;
+    }
+
+    &:focus {
+      width: 55rem;
+    }
+
+    &--small {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__btn,
+  &__btn:active,
+  &__btn:focus {
+    padding: 2rem 10rem;
+    margin-top: 2rem;
+  }
+
+  &__btn {
+    color: $color-grey-light-2;
+  }
+
+  &__logo {
+    position: fixed;
+    top: 2.5rem;
+    left: 2.5rem;
+  }
+
+  &__logo-position {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  &__logo-image {
+    height: 7rem;
+  }
+
+  &__logo-title {
+    font-size: 1.6rem;
+    color: $color-primary-dark;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-left: 1rem;
+  }
+
+  &__file {
+    display: none;
+  }
+
+  &__label {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn {
+      color: $color-grey-light-2;
+    }
+  }
+
+  &__error {
+    font-size: 1.8rem;
+    color: $color-primary;
+  }
+
+  &__file-title {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    align-items: center;
+    font-size: 1.6rem;
+    color: $color-primary;
+  }
+
+  &__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.5rem;
+
+    .heading-1 {
+      text-transform: uppercase;
+      letter-spacing: 20px;
+      text-align: center;
+    }
+
+    .heading-3 {
+      letter-spacing: 15px;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  }
+
+  &__title-btn,
+  &__title-btn:active,
+  &__title-btn:visited,
+  &__title-btn:focus {
+    padding: 2rem 10rem;
+
+    &:not(:last-child) {
+      margin: 3rem 0;
+    }
+  }
+
+  &__title-btn {
+    color: $color-grey-light-2;
+  }
+}
