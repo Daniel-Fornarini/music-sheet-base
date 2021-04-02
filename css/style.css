@@ -274,10 +274,19 @@ body {
   grid-column: center-start / center-end;
   background-color: #dfdfdf;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 0.33fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 0.33fr));
   grid-gap: 7rem;
   justify-content: center;
   padding-bottom: 10rem; }
+  @media only screen and (max-width: 58.125em) {
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 0.4fr)); } }
+  @media only screen and (max-width: 39.375em) {
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 0.6fr)); } }
+  @media only screen and (max-width: 31.25em) {
+    .cards {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 0.8fr)); } }
   .cards__title {
     grid-row: 3 / 4;
     grid-column: full-start / full-end;
@@ -285,9 +294,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: #dfdfdf;
     padding-top: 10rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem; }
     .cards__title .heading-1 {
       color: #8b9493;
       text-transform: uppercase;
@@ -311,7 +323,6 @@ body {
 
 .card {
   transition: all 0.4s;
-  border: -2px solid #c69963;
   position: relative; }
   .card__top {
     height: 22.5rem;
@@ -346,7 +357,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 500; }
+    font-weight: 500;
+    text-align: center; }
     .card .card__year span, .card .card__duration span, .card .card__key span {
       font-size: 1.6rem;
       color: #c69963;
