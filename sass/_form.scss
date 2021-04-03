@@ -64,6 +64,15 @@
     position: fixed;
     top: 2.5rem;
     left: 2.5rem;
+
+    @media only screen and (max-width: 93.75em) {
+      position: absolute; //da rivedere
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      top: 1.75rem;
+      left: 1.75rem;
+    }
   }
 
   &__logo-position {
@@ -74,6 +83,10 @@
 
   &__logo-image {
     height: 7rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      height: 6rem;
+    }
   }
 
   &__logo-title {

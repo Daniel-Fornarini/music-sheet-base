@@ -14,11 +14,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 2rem;
 
     .heading-1 {
       text-transform: uppercase;
       letter-spacing: 20px;
       text-align: center;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 3.8rem;
+        letter-spacing: 10px;
+      }
+
+      @media only screen and (max-width: 21.875em) {
+        font-size: 3rem;
+      }
     }
 
     .heading-3 {
@@ -26,6 +36,15 @@
       margin: 3.5rem 0;
       margin-top: 2rem;
       text-align: center;
+
+      @media only screen and (max-width: $bp-smallest) {
+        //font-size: 3.8rem;
+        letter-spacing: 7.5px;
+      }
+
+      @media only screen and (max-width: 21.875em) {
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -65,6 +84,10 @@
   &__render {
     margin-top: 2rem;
     border: 2px solid $color-primary;
+
+    @media only screen and (max-width: $bp-small) {
+      width: 85vw;
+    }
   }
 
   &__btn,
@@ -73,5 +96,13 @@
   &__btn:focus {
     margin-top: 3.5rem;
     padding: 2rem 10rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 2rem 8rem;
+    }
+
+    @media only screen and (max-width: 21.875em) {
+      padding: 2rem 6rem;
+    }
   }
 }

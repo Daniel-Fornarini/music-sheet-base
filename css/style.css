@@ -43,6 +43,9 @@ body {
   display: grid;
   grid-template-rows: 80vh repeat(2, min-content) 35vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-height: 34.375em) {
+    .container-track {
+      grid-template-rows: max-content repeat(2, min-content) min-content; } }
 
 .spacing-fix {
   letter-spacing: 0; }
@@ -683,12 +686,22 @@ body {
     position: fixed;
     top: 2.5rem;
     left: 2.5rem; }
+    @media only screen and (max-width: 93.75em) {
+      .form__logo {
+        position: absolute; } }
+    @media only screen and (max-width: 37.5em) {
+      .form__logo {
+        top: 1.75rem;
+        left: 1.75rem; } }
   .form__logo-position {
     display: flex;
     align-items: center;
     text-decoration: none; }
   .form__logo-image {
     height: 7rem; }
+    @media only screen and (max-width: 37.5em) {
+      .form__logo-image {
+        height: 6rem; } }
   .form__logo-title {
     font-size: 1.6rem;
     color: #956e43;
@@ -744,19 +757,32 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-height: 34.375em) {
+    .track__container {
+      padding: 10rem 0; } }
   .track__title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1.5rem; }
+    margin-bottom: 1.5rem;
+    text-align: center; }
   .track__heading-1 {
     text-transform: uppercase;
     font-size: 8rem;
     font-weight: 500; }
+    @media only screen and (max-width: 37.5em) {
+      .track__heading-1 {
+        font-size: 6rem; } }
+    @media only screen and (max-width: 21.875em) {
+      .track__heading-1 {
+        font-size: 5rem; } }
   .track__heading-3 {
     font-weight: 300;
     font-size: 3.5rem;
     letter-spacing: 3px; }
+    @media only screen and (max-width: 37.5em) {
+      .track__heading-3 {
+        font-size: 3rem; } }
   .track__info {
     display: flex;
     flex-direction: column;
@@ -772,6 +798,9 @@ body {
     margin: 0.5rem 0;
     letter-spacing: 3px;
     color: #8b9493; }
+    @media only screen and (max-width: 37.5em) {
+      .track__info-item {
+        font-size: 2.5rem; } }
     .track__info-item span {
       font-size: 1.8rem;
       color: #c69963;
@@ -781,7 +810,9 @@ body {
     font-size: 1.6rem;
     margin-top: 2.5rem;
     font-weight: 100;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0 1rem; }
     .track__posted span {
       font-weight: 500;
       font-size: 1.8rem;
@@ -800,19 +831,40 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    text-align: center;
+    padding: 0 2rem; }
     .video__title .heading-1 {
       color: #8b9493;
       text-transform: uppercase;
       letter-spacing: 20px;
       text-align: center; }
+      @media only screen and (max-width: 37.5em) {
+        .video__title .heading-1 {
+          font-size: 3.8rem;
+          letter-spacing: 10px; } }
+      @media only screen and (max-width: 21.875em) {
+        .video__title .heading-1 {
+          font-size: 3rem; } }
     .video__title .heading-3 {
       letter-spacing: 15px;
       margin: 3.5rem 0;
       margin-top: 2rem;
       text-align: center; }
+      @media only screen and (max-width: 37.5em) {
+        .video__title .heading-3 {
+          letter-spacing: 7.5px; } }
+      @media only screen and (max-width: 21.875em) {
+        .video__title .heading-3 {
+          font-size: 1.4rem; } }
   .video__container {
     width: 50%; }
+    @media only screen and (max-width: 50em) {
+      .video__container {
+        width: 65%; } }
+    @media only screen and (max-width: 37.5em) {
+      .video__container {
+        width: 75%; } }
   .video__youtube {
     position: relative;
     padding-bottom: 56.25%;
@@ -839,16 +891,30 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    padding: 0 2rem; }
     .pdf__title .heading-1 {
       text-transform: uppercase;
       letter-spacing: 20px;
       text-align: center; }
+      @media only screen and (max-width: 37.5em) {
+        .pdf__title .heading-1 {
+          font-size: 3.8rem;
+          letter-spacing: 10px; } }
+      @media only screen and (max-width: 21.875em) {
+        .pdf__title .heading-1 {
+          font-size: 3rem; } }
     .pdf__title .heading-3 {
       letter-spacing: 15px;
       margin: 3.5rem 0;
       margin-top: 2rem;
       text-align: center; }
+      @media only screen and (max-width: 37.5em) {
+        .pdf__title .heading-3 {
+          letter-spacing: 7.5px; } }
+      @media only screen and (max-width: 21.875em) {
+        .pdf__title .heading-3 {
+          font-size: 1.4rem; } }
   .pdf__controls {
     display: flex;
     justify-content: center;
@@ -873,6 +939,15 @@ body {
   .pdf__render {
     margin-top: 2rem;
     border: 2px solid #c69963; }
+    @media only screen and (max-width: 43.75em) {
+      .pdf__render {
+        width: 85vw; } }
   .pdf__btn, .pdf__btn:active, .pdf__btn:visited, .pdf__btn:focus {
     margin-top: 3.5rem;
     padding: 2rem 10rem; }
+    @media only screen and (max-width: 37.5em) {
+      .pdf__btn, .pdf__btn:active, .pdf__btn:visited, .pdf__btn:focus {
+        padding: 2rem 8rem; } }
+    @media only screen and (max-width: 21.875em) {
+      .pdf__btn, .pdf__btn:active, .pdf__btn:visited, .pdf__btn:focus {
+        padding: 2rem 6rem; } }

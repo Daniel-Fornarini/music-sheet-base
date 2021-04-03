@@ -18,12 +18,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0 2rem;
 
     .heading-1 {
       color: $color-grey-dark-1;
       text-transform: uppercase;
       letter-spacing: 20px;
       text-align: center;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 3.8rem;
+        letter-spacing: 10px;
+      }
+
+      @media only screen and (max-width: 21.875em) {
+        font-size: 3rem;
+      }
     }
 
     .heading-3 {
@@ -31,11 +42,28 @@
       margin: 3.5rem 0;
       margin-top: 2rem;
       text-align: center;
+
+      @media only screen and (max-width: $bp-smallest) {
+        //font-size: 3.8rem;
+        letter-spacing: 7.5px;
+      }
+
+      @media only screen and (max-width: 21.875em) {
+        font-size: 1.4rem;
+      }
     }
   }
 
   &__container {
     width: 50%;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 65%;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 75%;
+    }
   }
 
   &__youtube {

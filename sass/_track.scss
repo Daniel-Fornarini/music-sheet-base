@@ -15,23 +15,42 @@
   justify-content: center;
   align-items: center;
 
+  &__container {
+    @media only screen and (max-height: 34.375em) {
+      padding: 10rem 0;
+    }
+  }
+
   &__title {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   &__heading-1 {
     text-transform: uppercase;
     font-size: 8rem;
     font-weight: 500;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 6rem;
+    }
+
+    @media only screen and (max-width: 21.875em) {
+      font-size: 5rem;
+    }
   }
 
   &__heading-3 {
     font-weight: 300;
     font-size: 3.5rem;
     letter-spacing: 3px;
+
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 3rem;
+    }
   }
 
   &__info {
@@ -52,6 +71,10 @@
     letter-spacing: 3px;
     color: $color-grey-dark-1;
 
+    @media only screen and (max-width: $bp-smallest) {
+      font-size: 2.5rem;
+    }
+
     span {
       font-size: 1.8rem;
       color: $color-primary;
@@ -65,6 +88,8 @@
     margin-top: 2.5rem;
     font-weight: 100;
     letter-spacing: 2px;
+    text-align: center;
+    padding: 0 1rem;
 
     span {
       //color: $color-primary;
