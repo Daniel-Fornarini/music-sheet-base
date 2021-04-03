@@ -77,6 +77,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .header__left {
         padding: 4rem; } }
+    @media only screen and (max-width: 21.875em) {
+      .header__left {
+        padding: 3rem; } }
   .header__btn {
     justify-self: start;
     align-self: end; }
@@ -95,17 +98,26 @@ body {
     height: 10rem;
     transform: rotate(0deg);
     margin-right: 1rem; }
+    @media only screen and (max-width: 21.875em) {
+      .header__logo-image {
+        height: 7rem; } }
   .header__logo-title {
     font-size: 2.2rem;
     color: #956e43;
     font-weight: 400;
     letter-spacing: 3px; }
+    @media only screen and (max-width: 21.875em) {
+      .header__logo-title {
+        font-size: 1.6rem; } }
 
 .heading-1 {
   font-size: 4.5rem;
   color: #cdcdcd;
   line-height: 1;
   font-weight: 600; }
+  @media only screen and (max-width: 21.875em) {
+    .heading-1 {
+      font-size: 3rem; } }
 
 .heading-2 {
   font-size: 3.2rem;
@@ -114,12 +126,18 @@ body {
   color: #737a79;
   text-transform: uppercase;
   letter-spacing: 7px; }
+  @media only screen and (max-width: 21.875em) {
+    .heading-2 {
+      font-size: 2rem; } }
 
 .heading-3 {
   font-size: 1.6rem;
   color: #c69963;
   text-transform: uppercase;
   letter-spacing: 5px; }
+  @media only screen and (max-width: 21.875em) {
+    .heading-3 {
+      font-size: 1.4rem; } }
 
 .heading-4 {
   font-size: 1.9rem; }
@@ -228,6 +246,9 @@ body {
         width: 90%; }
         .search__input-text:focus {
           width: 100%; } }
+    @media only screen and (max-width: 21.875em) {
+      .search__input-text {
+        font-size: 2rem; } }
   .search__choose {
     margin-top: 3rem;
     font-size: 1.6rem;
@@ -262,6 +283,10 @@ body {
       border: 0.5rem solid #c69963; }
       .search__radio-button:hover::before {
         background-color: #c69963; }
+    @media only screen and (max-width: 21.875em) {
+      .search__radio-button {
+        width: 2.5rem;
+        height: 2.5rem; } }
     .search__radio-button::before {
       content: "";
       width: 2rem;
@@ -274,6 +299,10 @@ body {
       transform: translate(-50%, -50%);
       transition: all 0.2s;
       opacity: 0; }
+      @media only screen and (max-width: 21.875em) {
+        .search__radio-button::before {
+          width: 1.5rem;
+          height: 1.5rem; } }
   .search__radio-input:checked + .search__radio-label .search__radio-button::before {
     opacity: 1; }
   .search__button, .search__button:active, .search__button:focus {
@@ -281,6 +310,9 @@ body {
     @media only screen and (max-width: 37.5em) {
       .search__button, .search__button:active, .search__button:focus {
         padding: 2rem 8rem; } }
+    @media only screen and (max-width: 21.875em) {
+      .search__button, .search__button:active, .search__button:focus {
+        padding: 2rem 6rem; } }
 
 .cards {
   grid-row: 4 / 5;
@@ -433,6 +465,9 @@ body {
     text-transform: uppercase;
     font-size: 1.6rem;
     color: #cdcdcd; }
+    @media only screen and (max-width: 21.875em) {
+      .footer__link {
+        font-size: 1.4rem; } }
   .footer__split {
     display: flex;
     align-items: center;

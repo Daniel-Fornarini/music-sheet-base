@@ -42,6 +42,10 @@
     text-transform: uppercase;
     font-size: 1.6rem;
     color: $color-grey-light-2;
+
+    @media only screen and (max-width: 21.875em) {
+      font-size: 1.4rem;
+    }
   }
 
   &__split {

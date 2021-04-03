@@ -49,6 +49,10 @@
     @media only screen and (max-width: $bp-smallest) {
       padding: 4rem;
     }
+
+    @media only screen and (max-width: 21.875em) {
+      padding: 3rem;
+    }
   }
 
   &__btn {
@@ -77,6 +81,10 @@
     height: 10rem;
     transform: rotate(0deg);
     margin-right: 1rem;
+
+    @media only screen and (max-width: 21.875em) {
+      height: 7rem;
+    }
   }
 
   &__logo-title {
@@ -84,5 +92,9 @@
     color: $color-primary-dark;
     font-weight: 400;
     letter-spacing: 3px;
+
+    @media only screen and (max-width: 21.875em) {
+      font-size: 1.6rem;
+    }
   }
 }
