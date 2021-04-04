@@ -371,7 +371,9 @@ body {
 
 .card {
   transition: all 0.4s;
-  position: relative; }
+  position: relative;
+  height: 100%;
+  background-color: #eee; }
   .card__top {
     height: 22.5rem;
     background-image: linear-gradient(to right bottom, rgba(60, 60, 60, 0.98), rgba(36, 36, 36, 0.98)), url(../img/card.jpg);
@@ -507,6 +509,9 @@ body {
   opacity: 0;
   transition: all 0.2s;
   text-transform: uppercase; }
+  @media only screen and (max-width: 37.5em) {
+    .navbar__user {
+      transform: translateY(35%); } }
 
 .navbar__checkbox:checked ~ .navbar__user {
   visibility: visible;
@@ -601,6 +606,18 @@ body {
   transform-style: preserve-3d; }
   .navbar__list--big {
     padding: 6rem 11.5rem; }
+  @media only screen and (max-width: 28.125em) {
+    .navbar__list {
+      padding: 6rem 3rem; } }
+  @media only screen and (max-height: 31.25em) {
+    .navbar__list {
+      padding: 1rem 0.5rem; } }
+  @media only screen and (max-width: 23.125em) {
+    .navbar__list {
+      padding: 6rem 2rem; } }
+  @media only screen and (max-height: 20em) and (max-width: 37.5em) {
+    .navbar__list {
+      padding: 0.5rem 0rem; } }
   .navbar__list::before, .navbar__list::after {
     content: "";
     position: absolute;
@@ -628,16 +645,27 @@ body {
 .navbar__item {
   padding: 4rem;
   transform: translateZ(1px);
-  transition: 0.2s; }
+  transition: 0.2s;
+  text-align: center; }
   .navbar__item:hover {
     transform: translateZ(1px) scale(1.1); }
+  @media only screen and (max-width: 28.125em) {
+    .navbar__item {
+      padding: 2.5rem; } }
+  @media only screen and (max-width: 23.125em) {
+    .navbar__item {
+      padding: 1.5rem; } }
+  @media only screen and (max-height: 20em) and (max-width: 37.5em) {
+    .navbar__item {
+      padding: 2rem 3.2rem; } }
 
 .navbar__link {
   text-decoration: none;
   font-size: 2.5rem;
   color: #c69963;
   text-transform: uppercase;
-  font-weight: 300; }
+  font-weight: 300;
+  text-align: center; }
 
 .navbar__checkbox:checked ~ .navbar__back {
   visibility: visible;

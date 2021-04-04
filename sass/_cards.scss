@@ -68,6 +68,8 @@
 .card {
   transition: all 0.4s;
   position: relative;
+  height: 100%;
+  background-color: #eee;
 
   &__top {
     height: 22.5rem;
