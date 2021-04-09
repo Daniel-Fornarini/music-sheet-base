@@ -708,6 +708,8 @@ body {
   .form__input {
     width: 50rem;
     background-color: transparent;
+    border: 0px solid transparent;
+    border-radius: 0;
     border: none;
     border-bottom: 3px solid #c69963;
     outline: none;
