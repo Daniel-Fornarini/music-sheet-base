@@ -43,7 +43,7 @@ body {
   display: grid;
   grid-template-rows: 80vh repeat(2, min-content) 35vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  @media only screen and (max-height: 34.375em) {
+  @media only screen and (max-height: 40.625em) {
     .container-track {
       grid-template-rows: max-content repeat(2, min-content) min-content; } }
 
@@ -605,6 +605,12 @@ body {
   transform-style: preserve-3d;
   width: 25vw;
   height: 60vh; }
+  @media only screen and (max-height: 21.875em) {
+    .navbar__list {
+      height: 50vh; } }
+  @media only screen and (max-height: 15.625em) {
+    .navbar__list {
+      height: 40vh; } }
   @media only screen and (max-width: 65.625em) {
     .navbar__list {
       width: 40vw; } }
@@ -793,7 +799,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-height: 34.375em) {
+  @media only screen and (max-height: 40.625em) {
     .track__container {
       padding: 10rem 0; } }
   .track__title {

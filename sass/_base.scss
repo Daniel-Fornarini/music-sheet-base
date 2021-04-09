@@ -87,7 +87,7 @@ body {
     )
     [center-end] minmax(6rem, 1fr) [full-end];
 
-  @media only screen and (max-height: 34.375em) {
+  @media only screen and (max-height: 40.625em) {
     grid-template-rows: max-content repeat(2, min-content) min-content;
   }
 }

@@ -137,6 +137,14 @@
     width: 25vw;
     height: 60vh;
 
+    @media only screen and (max-height: 21.875em) {
+      height: 50vh;
+    }
+
+    @media only screen and (max-height: 15.625em) {
+      height: 40vh;
+    }
+
     @media only screen and (max-width: 65.625em) {
       width: 40vw;
     }
