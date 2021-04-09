@@ -138,27 +138,27 @@
     height: 60vh;
 
     @media only screen and (max-width: 65.625em) {
-      width: 35vw;
-    }
-
-    @media only screen and (max-width: 53.125em) {
       width: 40vw;
     }
 
+    @media only screen and (max-width: 53.125em) {
+      width: 45vw;
+    }
+
     @media only screen and (max-width: 40.625em) {
-      width: 50vw;
+      width: 55vw;
     }
 
     @media only screen and (max-width: 31.25em) {
-      width: 60vw;
+      width: 65vw;
     }
 
     @media only screen and (max-width: 25em) {
-      width: 75vw;
+      width: 80vw;
     }
 
     @media only screen and (max-width: 20.9375em) {
-      width: 85vw;
+      width: 90vw;
     }
 
     // &--big {

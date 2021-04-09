@@ -607,22 +607,22 @@ body {
   height: 60vh; }
   @media only screen and (max-width: 65.625em) {
     .navbar__list {
-      width: 35vw; } }
+      width: 40vw; } }
   @media only screen and (max-width: 53.125em) {
     .navbar__list {
-      width: 40vw; } }
+      width: 45vw; } }
   @media only screen and (max-width: 40.625em) {
     .navbar__list {
-      width: 50vw; } }
+      width: 55vw; } }
   @media only screen and (max-width: 31.25em) {
     .navbar__list {
-      width: 60vw; } }
+      width: 65vw; } }
   @media only screen and (max-width: 25em) {
     .navbar__list {
-      width: 75vw; } }
+      width: 80vw; } }
   @media only screen and (max-width: 20.9375em) {
     .navbar__list {
-      width: 85vw; } }
+      width: 90vw; } }
   .navbar__list::before, .navbar__list::after {
     content: "";
     position: absolute;
