@@ -38,6 +38,9 @@ body {
   display: grid;
   grid-template-rows: 100vh 35vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  @media only screen and (max-height: 34.375em) {
+    .container-form {
+      grid-template-rows: max-content 35vh; } }
 
 .container-track {
   display: grid;
@@ -694,6 +697,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-height: 34.375em) {
+    .form {
+      padding: 12rem 0; } }
   .form__group {
     display: flex;
     flex-direction: column;
@@ -711,17 +717,29 @@ body {
     padding-bottom: 0.5rem;
     margin-bottom: 5rem;
     transition: all 0.2s; }
+    @media only screen and (max-width: 31.25em) {
+      .form__input {
+        width: 80vw; } }
     .form__input::placeholder {
       font-family: "Montserrat", sans-serif;
       color: rgba(115, 122, 121, 0.7);
       font-weight: 300; }
     .form__input:focus {
       width: 55rem; }
+      @media only screen and (max-width: 31.25em) {
+        .form__input:focus {
+          width: 85vw; } }
     .form__input--small {
       margin-bottom: 3rem; }
   .form__btn, .form__btn:active, .form__btn:focus {
     padding: 2rem 10rem;
     margin-top: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .form__btn, .form__btn:active, .form__btn:focus {
+        padding: 2rem 8rem; } }
+    @media only screen and (max-width: 21.875em) {
+      .form__btn, .form__btn:active, .form__btn:focus {
+        padding: 2rem 6rem; } }
   .form__btn {
     color: #cdcdcd; }
   .form__logo {
@@ -774,15 +792,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3.5rem; }
+    padding: 0 1rem;
+    margin-bottom: 3.5rem;
+    text-align: center; }
     .form__title .heading-1 {
       text-transform: uppercase;
       letter-spacing: 20px;
       text-align: center; }
+      @media only screen and (max-width: 43.75em) {
+        .form__title .heading-1 {
+          letter-spacing: 10px; } }
     .form__title .heading-3 {
       letter-spacing: 15px;
       margin-top: 2rem;
       text-align: center; }
+      @media only screen and (max-width: 43.75em) {
+        .form__title .heading-3 {
+          letter-spacing: 7px; } }
   .form__title-btn, .form__title-btn:active, .form__title-btn:visited, .form__title-btn:focus {
     padding: 2rem 10rem; }
     .form__title-btn:not(:last-child), .form__title-btn:active:not(:last-child), .form__title-btn:visited:not(:last-child), .form__title-btn:focus:not(:last-child) {

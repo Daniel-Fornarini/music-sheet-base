@@ -75,6 +75,10 @@ body {
       [col-start] minmax(min-content, 14rem) [col-end]
     )
     [center-end] minmax(6rem, 1fr) [full-end];
+
+  @media only screen and (max-height: 34.375em) {
+    grid-template-rows: max-content 35vh;
+  }
 }
 
 .container-track {
