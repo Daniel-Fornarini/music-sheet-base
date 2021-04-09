@@ -600,24 +600,29 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 6rem 4rem;
   background-color: #242424;
   position: relative;
-  transform-style: preserve-3d; }
-  .navbar__list--big {
-    padding: 6rem 11.5rem; }
-  @media only screen and (max-width: 28.125em) {
+  transform-style: preserve-3d;
+  width: 25vw;
+  height: 60vh; }
+  @media only screen and (max-width: 65.625em) {
     .navbar__list {
-      padding: 6rem 3rem; } }
-  @media only screen and (max-height: 31.25em) {
+      width: 35vw; } }
+  @media only screen and (max-width: 53.125em) {
     .navbar__list {
-      padding: 1rem 0.5rem; } }
-  @media only screen and (max-width: 23.125em) {
+      width: 40vw; } }
+  @media only screen and (max-width: 40.625em) {
     .navbar__list {
-      padding: 6rem 2rem; } }
-  @media only screen and (max-height: 20em) and (max-width: 37.5em) {
+      width: 50vw; } }
+  @media only screen and (max-width: 31.25em) {
     .navbar__list {
-      padding: 0.5rem 0rem; } }
+      width: 60vw; } }
+  @media only screen and (max-width: 25em) {
+    .navbar__list {
+      width: 75vw; } }
+  @media only screen and (max-width: 20.9375em) {
+    .navbar__list {
+      width: 85vw; } }
   .navbar__list::before, .navbar__list::after {
     content: "";
     position: absolute;
@@ -643,21 +648,24 @@ body {
   height: 115%; }
 
 .navbar__item {
-  padding: 4rem;
+  padding: 4rem 0;
   transform: translateZ(1px);
   transition: 0.2s;
   text-align: center; }
   .navbar__item:hover {
     transform: translateZ(1px) scale(1.1); }
-  @media only screen and (max-width: 28.125em) {
+  @media only screen and (max-height: 40.625em) {
     .navbar__item {
-      padding: 2.5rem; } }
-  @media only screen and (max-width: 23.125em) {
+      padding: 3rem 0; } }
+  @media only screen and (max-height: 34.375em) {
     .navbar__item {
-      padding: 1.5rem; } }
-  @media only screen and (max-height: 20em) and (max-width: 37.5em) {
+      padding: 2rem 0; } }
+  @media only screen and (max-height: 28.125em) {
     .navbar__item {
-      padding: 2rem 3.2rem; } }
+      padding: 1rem 0; } }
+  @media only screen and (max-height: 23.4375em) {
+    .navbar__item {
+      padding: 0.5rem 0; } }
 
 .navbar__link {
   text-decoration: none;

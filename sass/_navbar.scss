@@ -131,14 +131,39 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 6rem 4rem;
     background-color: $color-secondary;
     position: relative;
     transform-style: preserve-3d;
+    width: 25vw;
+    height: 60vh;
 
-    &--big {
-      padding: 6rem 11.5rem;
+    @media only screen and (max-width: 65.625em) {
+      width: 35vw;
     }
+
+    @media only screen and (max-width: 53.125em) {
+      width: 40vw;
+    }
+
+    @media only screen and (max-width: 40.625em) {
+      width: 50vw;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      width: 60vw;
+    }
+
+    @media only screen and (max-width: 25em) {
+      width: 75vw;
+    }
+
+    @media only screen and (max-width: 20.9375em) {
+      width: 85vw;
+    }
+
+    // &--big {
+    //   padding: 6rem 11.5rem;
+    // }
 
     // @media only screen and (max-height: 26.875em) and (max-width: 56.25em) {
     //   padding: 4rem 3rem;
@@ -148,21 +173,21 @@
     //   padding: 2rem 1.5rem;
     // }
 
-    @media only screen and (max-width: 28.125em) {
-      padding: 6rem 3rem;
-    }
+    // @media only screen and (max-width: 28.125em) {
+    //   padding: 6rem 3rem;
+    // }
 
-    @media only screen and (max-height: 31.25em) {
-      padding: 1rem 0.5rem;
-    }
+    // @media only screen and (max-height: 31.25em) {
+    //   padding: 1rem 0.5rem;
+    // }
 
-    @media only screen and (max-width: 23.125em) {
-      padding: 6rem 2rem;
-    }
+    // @media only screen and (max-width: 23.125em) {
+    //   padding: 6rem 2rem;
+    // }
 
-    @media only screen and (max-height: 20em) and (max-width: $bp-smallest) {
-      padding: 0.5rem 0rem;
-    }
+    // @media only screen and (max-height: 20em) and (max-width: $bp-smallest) {
+    //   padding: 0.5rem 0rem;
+    // }
 
     // @media only screen and (max-height: 21.875em) and (max-width: 56.25em) {
     //   padding: 0rem 1.5rem;
@@ -202,7 +227,7 @@
   }
 
   &__item {
-    padding: 4rem;
+    padding: 4rem 0;
     transform: translateZ(1px);
     transition: 0.2s;
     text-align: center;
@@ -211,17 +236,33 @@
       transform: translateZ(1px) scale(1.1);
     }
 
-    @media only screen and (max-width: 28.125em) {
-      padding: 2.5rem;
+    @media only screen and (max-height: 40.625em) {
+      padding: 3rem 0;
     }
 
-    @media only screen and (max-width: 23.125em) {
-      padding: 1.5rem;
+    @media only screen and (max-height: 34.375em) {
+      padding: 2rem 0;
     }
 
-    @media only screen and (max-height: 20em) and (max-width: $bp-smallest) {
-      padding: 2rem 3.2rem;
+    @media only screen and (max-height: 28.125em) {
+      padding: 1rem 0;
     }
+
+    @media only screen and (max-height: 23.4375em) {
+      padding: 0.5rem 0;
+    }
+
+    // @media only screen and (max-width: 28.125em) {
+    //   padding: 2.5rem;
+    // }
+
+    // @media only screen and (max-width: 23.125em) {
+    //   padding: 1.5rem;
+    // }
+
+    // @media only screen and (max-height: 20em) and (max-width: $bp-smallest) {
+    //   padding: 2rem 3.2rem;
+    // }
   }
 
   &__link {
