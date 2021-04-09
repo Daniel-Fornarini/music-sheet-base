@@ -77,7 +77,7 @@ body {
     [center-end] minmax(6rem, 1fr) [full-end];
 
   @media only screen and (max-height: 34.375em) {
-    grid-template-rows: max-content 35vh;
+    grid-template-rows: max-content min-content;
   }
 }
 
