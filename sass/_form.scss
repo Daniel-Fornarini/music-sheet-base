@@ -9,8 +9,9 @@
   background-size: cover;
   background-position: center;
 
-  @media only screen and (max-height: 34.375em) {
-    padding: 12rem 0;
+  @media only screen and (max-height: $bp-medium) {
+    padding-top: 14rem;
+    padding-bottom: 12rem;
   }
 
   display: flex;

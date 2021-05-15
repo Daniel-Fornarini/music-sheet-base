@@ -11,6 +11,9 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-height: 53.125em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -38,7 +41,7 @@ body {
   display: grid;
   grid-template-rows: 100vh 35vh;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  @media only screen and (max-height: 34.375em) {
+  @media only screen and (max-height: 50em) {
     .container-form {
       grid-template-rows: max-content min-content; } }
 
@@ -697,9 +700,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-  @media only screen and (max-height: 34.375em) {
+  @media only screen and (max-height: 50em) {
     .form {
-      padding: 12rem 0; } }
+      padding-top: 14rem;
+      padding-bottom: 12rem; } }
   .form__group {
     display: flex;
     flex-direction: column;
